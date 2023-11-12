@@ -214,7 +214,7 @@ function App() {
       .catch((err) => {
         setIsStatus({
           status: false,
-          text: 'Что-то пошло не так! Попробуйте ещё раз.',
+          text: 'Что-то пошло не так! Попробуйте ещё раз',
         });
         setIsAuthPopupOpen(true);
       });
