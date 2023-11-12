@@ -1,0 +1,13 @@
+.header__desc-container {
+    height: 33px;
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+  }
+  
+  @media (min-width: 768px) {
+    .header__desc-container {
+      display: flex;
+    }
+  }

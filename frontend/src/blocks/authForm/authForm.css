@@ -1,0 +1,17 @@
+.authForm {
+  margin: 0 auto;
+  max-width: 358px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-grow: 1;
+  padding: 40px 30px;
+  color: white;
+}
+
+@media (min-width: 426px) {
+  .authForm {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+}

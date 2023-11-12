@@ -1,0 +1,8 @@
+.list__image {
+  display: block;
+  aspect-ratio: 1 / 1.001;
+  width: 100%;
+  padding-bottom: 17px;
+  object-position: center;
+  object-fit: cover;
+}

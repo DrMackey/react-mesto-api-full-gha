@@ -1,0 +1,19 @@
+.profile__edit-button {
+  width: 18px;
+  height: 18px;
+  background-color: black;
+  border: 1px solid white;
+  background-image: url(../../../images/logo/edit-button.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50% auto;
+  cursor: pointer;
+}
+
+@media (min-width: 426px) {
+  .profile__edit-button {
+    transform: translate(1px, 4px);
+    width: 24px;
+    height: 24px;
+  }
+}

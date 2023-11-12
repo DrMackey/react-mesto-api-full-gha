@@ -1,0 +1,15 @@
+
+.header__mobile-container {
+    justify-self: end;
+    height: 21px;
+    width: 24px;
+    background-image: url(../../../images/logo/burger-menu.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  @media (min-width: 768px) {
+    .header__mobile-container {
+      display: none;
+    }
+  }

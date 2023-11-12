@@ -1,0 +1,8 @@
+.popup__status {
+    width: 100%;
+    margin-top: 25px;
+    min-height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 120px 120px;
+  }

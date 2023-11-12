@@ -1,0 +1,17 @@
+
+.menu {
+    height: 63px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+    gap: 18px;
+    border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+    overflow: hidden;
+    transition: .5s ease-in-out;
+  }
+
+@media (min-width: 768px) {
+    .menu {
+      display: none;
+    }
+  }

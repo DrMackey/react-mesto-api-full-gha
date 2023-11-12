@@ -1,0 +1,26 @@
+.header__link {
+    max-height: 24.4px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+    text-decoration: none;
+    cursor: pointer;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: opacity .2s ease-in-out;
+}
+
+.header__link:hover {
+    opacity: .6;
+}
+
+@media (min-width: 426px) {
+    .header__link {
+      font-size: 18px;
+    }
+  }
