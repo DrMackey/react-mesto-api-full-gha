@@ -24,25 +24,26 @@ const allowedCors = [
   'https://api.mesto-drmackey.nomoredomainsrocks.ru',
 ];
 
+app.use(cors({ credentials: true, origin: allowedCors, maxAge: 30 }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
-app.use(cors({ credentials: true, origin: allowedCors, maxAge: 30 }));
+
 app.use(requestLogger);
 
 mongoose.connect('mongodb://127.0.0.1:27017/mestodb', {
   useNewUrlParser: true,
 });
 
-app.use(function (req, res, next) {
-  const { origin } = req.headers;
+// app.use(function (req, res, next) {
+//   const { origin } = req.headers;
 
-  if (allowedCors.includes(origin)) {
-    res.header('Access-Control-Allow-Origin', origin);
-  }
+//   if (allowedCors.includes(origin)) {
+//     res.header('Access-Control-Allow-Origin', origin);
+//   }
 
-  next();
-});
+//   next();
+// });
 
 app.get('/crash-test', () => {
   setTimeout(() => {
