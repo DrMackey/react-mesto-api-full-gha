@@ -227,7 +227,7 @@ class Api {
 // });
 
 const api = new Api({
-  baseUrl: 'http://api.mesto-drmackey.nomoredomainsrocks.ru',
+  baseUrl: 'https://api.mesto-drmackey.nomoredomainsrocks.ru',
   headers: {
     'Content-Type': 'application/json',
   },
