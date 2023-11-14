@@ -12,8 +12,8 @@ const Conflict = require('../errors/conflict');
 const Unauthorized = require('../errors/unauthorized');
 
 const CREATED = 201;
-// const JWT_SECRET = 'token';
-const JWT_SECRET = process.env.JWT_SECRET;
+const JWT_SECRET = 'token';
+// const JWT_SECRET = process.env.JWT_SECRET;
 
 let token = '';
 
