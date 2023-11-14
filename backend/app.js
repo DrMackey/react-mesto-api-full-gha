@@ -18,6 +18,10 @@ const allowedCors = [
   'http://praktikum.tk',
   'http://localhost:3000',
   'http://localhost:3005',
+  'http://mesto-drmackey.nomoredomainsrocks.ru',
+  'http://api.mesto-drmackey.nomoredomainsrocks.ru',
+  'https://mesto-drmackey.nomoredomainsrocks.ru',
+  'https://api.mesto-drmackey.nomoredomainsrocks.ru',
 ];
 
 app.use(express.json());
