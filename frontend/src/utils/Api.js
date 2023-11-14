@@ -219,8 +219,15 @@ class Api {
 //   },
 // });
 
+// const api = new Api({
+//   baseUrl: 'http://localhost:3000',
+//   headers: {
+//     'Content-Type': 'application/json',
+//   },
+// });
+
 const api = new Api({
-  baseUrl: 'http://localhost:3000',
+  baseUrl: 'http://api.mesto-drmackey.nomoredomainsrocks.ru',
   headers: {
     'Content-Type': 'application/json',
   },
