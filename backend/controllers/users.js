@@ -16,11 +16,6 @@ const CREATED = 201;
 // const JWT_SECRET = process.env.JWT;
 const { NODE_ENV, JWT_SECRET } = process.env;
 
-// const token = jwt.sign(
-//   { _id: user._id },
-//   NODE_ENV === 'production' ? JWT_SECRET : 'dev-secret'
-// );
-
 let token = '';
 
 function getJwtToken(id) {
