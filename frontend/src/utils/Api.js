@@ -1,5 +1,3 @@
-// export const BASE_URL = "https://auth.nomoreparties.co";
-
 class Api {
   constructor({ baseUrl, headers }) {
     this._url = baseUrl;
@@ -188,7 +186,6 @@ class Api {
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',
-        // Authorization: `Bearer ${jwt}`,
       },
     })
       .then((res) => {
@@ -210,21 +207,6 @@ class Api {
     });
   }
 }
-
-// const api = new Api({
-//   baseUrl: 'https://mesto.nomoreparties.co/v1/cohort-70',
-//   headers: {
-//     authorization: 'ce17d6b4-1913-45c3-a0e7-cd331bad7135',
-//     'Content-Type': 'application/json',
-//   },
-// });
-
-// const api = new Api({
-//   baseUrl: 'http://localhost:3000',
-//   headers: {
-//     'Content-Type': 'application/json',
-//   },
-// });
 
 const api = new Api({
   baseUrl: 'https://api.mesto-drmackey.nomoredomainsrocks.ru',

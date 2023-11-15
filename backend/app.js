@@ -35,16 +35,6 @@ mongoose.connect('mongodb://127.0.0.1:27017/mestodb', {
   useNewUrlParser: true,
 });
 
-// app.use(function (req, res, next) {
-//   const { origin } = req.headers;
-
-//   if (allowedCors.includes(origin)) {
-//     res.header('Access-Control-Allow-Origin', origin);
-//   }
-
-//   next();
-// });
-
 app.get('/crash-test', () => {
   setTimeout(() => {
     throw new Error('Сервер сейчас упадёт');
@@ -69,9 +59,6 @@ app.use((req, res, next) => {
 app.use((err, req, res, next) => {
   const { statusCode = 500, message } = err;
 
-  // res
-  //   .status(statusCode)
-  //   .send({ message: statusCode === 500 ? 'Что то пошло не так' : message });
   res
     .status(statusCode)
     .send({ message: statusCode === 500 ? message : message });

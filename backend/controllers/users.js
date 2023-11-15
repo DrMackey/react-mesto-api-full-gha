@@ -22,7 +22,6 @@ function getJwtToken(id) {
     NODE_ENV === 'production' ? JWT_SECRET : 'dev-secret',
     { expiresIn: '7d' }
   );
-  console.log(token);
   return token;
 }
 
