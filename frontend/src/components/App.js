@@ -150,6 +150,7 @@ function App() {
 
   function handleUpdateAvatar({ avatar }) {
     setIsLoading(true);
+    console.log(avatar);
     api
       .updateAvatar(avatar)
       .then((profileData) => {
