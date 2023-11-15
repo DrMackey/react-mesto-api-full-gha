@@ -12,17 +12,17 @@ const Conflict = require('../errors/conflict');
 const Unauthorized = require('../errors/unauthorized');
 
 const CREATED = 201;
-const JWT_SECRET = 'token';
+// const JWT_SECRET = 'token';
 // const JWT_SECRET = process.env.JWT;
-// const { NODE_ENV, JWT_SECRET } = process.env;
+const { NODE_ENV, JWT_SECRET } = process.env;
 
 let token = '';
 
 function getJwtToken(id) {
   token = jwt.sign(
     { payload: id },
-    // NODE_ENV === 'production' ? JWT_SECRET : 'dev-secret',
-    JWT_SECRET,
+    NODE_ENV === 'production' ? JWT_SECRET : 'dev-secret',
+    // JWT_SECRET,
     { expiresIn: '7d' }
   );
   return token;
@@ -171,7 +171,6 @@ module.exports.login = (req, res, next) => {
         .cookie('jwt', token, {
           maxage: 3600000 * 24 * 7,
           httpOnly: true,
-          // secure: false,
           sameSite: true,
         })
         .send({ message: 'Успешная авторизация.' });
